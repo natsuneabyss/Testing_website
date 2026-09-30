@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Sky Inn Hotel Login</title>
+  </head>
+  <body>
+    <div class="login-shell">
+      <div class="login-visual">
+        <div class="login-visual-content">
+          <div class="brand" style="color: white; margin-bottom: 1.2rem;">
+            <span class="brand-mark">S</span>
+            <div>
+              <span>Sky Inn Hotel</span>
+              <small>Stay in comfort</small>
+            </div>
+          </div>
+
+          <h1>Everything your guests need, in one place.</h1>
+          <p>Manage bookings, room availability, customer service and hotel operations from a single welcoming dashboard.</p>
+
+          <div class="feature-chips">
+            <span>Friendly Guest Services</span>
+            <span>Smart Booking</span>
+            <span>Luxury Rooms</span>
+            <span>Relaxing Environment</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="login-panel">
+        <div class="login-card">
+          <div class="brand" style="margin-bottom: 1rem;">
+            <span class="brand-mark">S</span>
+            <div>
+              <span>Sky Inn</span>
+              <small>Operations</small>
+            </div>
+          </div>
+
+          <h2>Welcome back</h2>
+          <p class="subtitle">Sign in to access the customer portal or hotel admin dashboard.</p>
+
+          <div class="role-toggle" aria-label="Select user role">
+            <label>
+              <input type="radio" name="role" value="customer" checked />
+              <span>Customer</span>
+            </label>
+            <label>
+              <input type="radio" name="role" value="admin" />
+              <span>Admin</span>
+            </label>
+          </div>
+
+          <form id="loginForm" class="login-form">
+            <div class="field-group">
+              <label for="email">Email address</label>
+              <input id="email" type="email" placeholder="name@skyinn.com" required />
+            </div>
+
+            <div class="field-group">
+              <label for="password">Password</label>
+              <input id="password" type="password" placeholder="Enter your password" required />
+            </div>
+
+            <button type="submit" class="btn primary" style="width: 100%;">Sign in</button>
+          </form>
+
+          <p class="form-note">
+            <strong>Demo access:</strong><br />
+            Customer: customer@skyinn.com / customer123<br />
+            Admin: admin@skyinn.com / admin123
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

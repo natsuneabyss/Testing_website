@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Sky Inn Hotel | Rooms</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div>
+            <span>Sky Inn Hotel</span>
+            <small>Luxury stays</small>
+          </div>
+        </div>
+
+        <nav class="nav-links" aria-label="main navigation">
+          <a href="welcome.html">Welcome</a>
+          <a href="rooms.html" class="active">Rooms</a>
+          <a href="booking.html">Book</a>
+          <a href="my-bookings.html">My Bookings</a>
+          <a href="index.html">Logout</a>
+        </nav>
+
+        <div class="nav-meta">
+          <span class="user-pill" data-user-badge>Sarah Johnson</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Available rooms</h2>
+            <p>Handpicked stays with flexible pricing and premium amenities.</p>
+          </div>
+        </div>
+
+        <div class="panel search-box">
+          <div class="search-panel">
+            <div class="field-group">
+              <label for="checkin">Check-in</label>
+              <input id="checkin" type="date" value="2026-10-02" />
+            </div>
+
+            <div class="field-group">
+              <label for="checkout">Check-out</label>
+              <input id="checkout" type="date" value="2026-10-04" />
+            </div>
+
+            <div class="field-group">
+              <label for="guests">Guests</label>
+              <select id="guests">
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="roomtype">Room type</label>
+              <select id="roomtype">
+                <option>Any room</option>
+                <option>Standard</option>
+                <option>Deluxe</option>
+                <option>Executive</option>
+              </select>
+            </div>
+
+            <button class="btn primary" type="button">Check availability</button>
+          </div>
+        </div>
+
+        <div class="grid three" style="margin-top: 2rem;">
+          <article class="room-card">
+            <div class="room-image" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="room-body">
+              <h3>Standard Room</h3>
+              <p>Cozy room with queen bed, city view, and complimentary Wi-Fi.</p>
+              <div class="meta-row">
+                <span>2 guests</span>
+                <span class="price">RM 180</span>
+              </div>
+              <button class="btn primary" data-room-book data-room-name="Standard Room" data-room-type="Standard" data-room-price="180">Book now</button>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image" style="background-image:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="room-body">
+              <h3>Deluxe Room</h3>
+              <p>Comfort-focused stay with king bed, dining area, and breakfast.</p>
+              <div class="meta-row">
+                <span>2 guests</span>
+                <span class="price">RM 280</span>
+              </div>
+              <button class="btn primary" data-room-book data-room-name="Deluxe Room" data-room-type="Deluxe" data-room-price="280">Book now</button>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image" style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="room-body">
+              <h3>Executive Suite</h3>
+              <p>Luxury suite with premium lounge space and private balcony.</p>
+              <div class="meta-row">
+                <span>4 guests</span>
+                <span class="price">RM 380</span>
+              </div>
+              <button class="btn primary" data-room-book data-room-name="Executive Suite" data-room-type="Executive" data-room-price="380">Book now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Sky Inn Hotel | My Bookings</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div>
+            <span>Sky Inn Hotel</span>
+            <small>Luxury stays</small>
+          </div>
+        </div>
+
+        <nav class="nav-links" aria-label="main navigation">
+          <a href="welcome.html">Welcome</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="booking.html">Book</a>
+          <a href="my-bookings.html" class="active">My Bookings</a>
+          <a href="index.html">Logout</a>
+        </nav>
+
+        <div class="nav-meta">
+          <span class="user-pill" data-user-badge>Sarah Johnson</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>My bookings</h2>
+            <p>Track upcoming stays, payment status, and guest reviews.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap admin-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>Room</th>
+                <th>Dates</th>
+                <th>Status</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#SKY-2041</td>
+                <td>Deluxe Room</td>
+                <td>02 Oct - 04 Oct 2026</td>
+                <td><span class="badge confirmed">Confirmed</span></td>
+                <td>RM 620.00</td>
+              </tr>
+
+              <tr>
+                <td>#SKY-1812</td>
+                <td>Executive Suite</td>
+                <td>18 Oct - 22 Oct 2026</td>
+                <td><span class="badge pending">Pending</span></td>
+                <td>RM 1,520.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="checkout-card" style="margin-top: 2rem;">
+          <h3>Leave a review</h3>
+          <div class="field-group">
+            <label for="reviewRating">Guest rating</label>
+            <select id="reviewRating">
+              <option>Excellent</option>
+              <option>Very good</option>
+              <option>Good</option>
+              <option>Average</option>
+            </select>
+          </div>
+
+          <div class="field-group" style="margin-top: 1rem;">
+            <label for="reviewComment">Comments</label>
+            <textarea id="reviewComment" placeholder="Tell us about your stay..."></textarea>
+          </div>
+
+          <button class="btn primary" style="margin-top: 1rem;">Submit review</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

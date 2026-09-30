@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Sky Inn Hotel | Admin Dashboard</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div>
+            <span>Sky Inn Hotel</span>
+            <small>Admin panel</small>
+          </div>
+        </div>
+
+        <nav class="nav-links" aria-label="main navigation">
+          <a href="welcome.html">Customer View</a>
+          <a href="admin-dashboard.html" class="active">Dashboard</a>
+          <a href="room-edit.html">Room Edit</a>
+          <a href="index.html">Logout</a>
+        </nav>
+
+        <div class="nav-meta">
+          <span class="user-pill">Hotel Admin</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Operations dashboard</h2>
+            <p>Track hotel performance, room inventory, and guest bookings.</p>
+          </div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-box">
+            <h4>Bookings</h4>
+            <strong>128</strong>
+            <p>Reservations in total</p>
+          </div>
+
+          <div class="stat-box">
+            <h4>Occupancy</h4>
+            <strong>82%</strong>
+            <p>Current hotel usage</p>
+          </div>
+
+          <div class="stat-box">
+            <h4>Revenue</h4>
+            <strong>RM 28.5K</strong>
+            <p>Monthly revenue</p>
+          </div>
+
+          <div class="stat-box">
+            <h4>Rating</h4>
+            <strong>4.9</strong>
+            <p>Average guest review</p>
+          </div>
+        </div>
+
+        <div class="admin-layout">
+          <aside class="sidebar">
+            <nav>
+              <a href="admin-dashboard.html" class="active">Dashboard</a>
+              <a href="room-edit.html">Room management</a>
+              <a href="welcome.html">Guest portal</a>
+              <a href="booking.html">New booking</a>
+              <a href="index.html">Exit</a>
+            </nav>
+          </aside>
+
+          <div class="admin-card">
+            <div class="inline-box">
+              <h3>Recent bookings</h3>
+              <a class="btn primary" href="room-edit.html">Manage rooms</a>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Guest</th>
+                    <th>Room</th>
+                    <th>Check-in</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sarah Johnson</td>
+                    <td>Deluxe Room</td>
+                    <td>02 Oct 2026</td>
+                    <td><span class="badge confirmed">Confirmed</span></td>
+                  </tr>
+                  <tr>
+                    <td>Daniel Lim</td>
+                    <td>Standard Room</td>
+                    <td>04 Oct 2026</td>
+                    <td><span class="badge pending">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>Fiona Tan</td>
+                    <td>Executive Suite</td>
+                    <td>09 Oct 2026</td>
+                    <td><span class="badge cancelled">Cancelled</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

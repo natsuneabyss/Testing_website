@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Sky Inn Hotel | Booking</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div>
+            <span>Sky Inn Hotel</span>
+            <small>Luxury stays</small>
+          </div>
+        </div>
+
+        <nav class="nav-links" aria-label="main navigation">
+          <a href="welcome.html">Welcome</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="booking.html" class="active">Book</a>
+          <a href="my-bookings.html">My Bookings</a>
+          <a href="index.html">Logout</a>
+        </nav>
+
+        <div class="nav-meta">
+          <span class="user-pill" data-user-badge>Sarah Johnson</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Book your stay</h2>
+            <p>Complete your reservation details and continue to payment.</p>
+          </div>
+        </div>
+
+        <div class="booking-layout">
+          <div class="checkout-card">
+            <h3>Guest details</h3>
+
+            <form>
+              <div class="grid two">
+                <div class="field-group">
+                  <label for="guestFullName">Full name</label>
+                  <input id="guestFullName" type="text" value="Sarah Johnson" required />
+                </div>
+
+                <div class="field-group">
+                  <label for="guestPhone">Phone number</label>
+                  <input id="guestPhone" type="tel" value="+6012-3456789" required />
+                </div>
+              </div>
+
+              <div class="field-group" style="margin-top: 1rem;">
+                <label for="guestEmail">Email address</label>
+                <input id="guestEmail" type="email" value="sarah.johnson@email.com" required />
+              </div>
+
+              <div class="field-group" style="margin-top: 1rem;">
+                <label for="bookingNotes">Special requests</label>
+                <textarea id="bookingNotes" placeholder="Late check-in, extra pillows, birthday decoration..."></textarea>
+              </div>
+
+              <div class="grid two" style="margin-top: 1rem;">
+                <div class="field-group">
+                  <label for="stayCheckin">Check-in date</label>
+                  <input id="stayCheckin" type="date" value="2026-10-02" />
+                </div>
+
+                <div class="field-group">
+                  <label for="stayCheckout">Check-out date</label>
+                  <input id="stayCheckout" type="date" value="2026-10-04" />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <aside class="summary-card" data-booking-summary>
+            <h3>Booking summary</h3>
+            <ul class="summary-list">
+              <li><span>Room</span><strong id="selectedRoomName">Deluxe Room</strong></li>
+              <li><span>Rate</span><strong id="selectedRoomPrice">RM 280.00 / night</strong></li>
+              <li><span>Stay</span><strong>2 nights</strong></li>
+              <li><span>Service</span><strong>RM 60.00</strong></li>
+            </ul>
+
+            <div class="total-row">
+              <span>Total</span>
+              <strong id="bookingTotal">RM 620.00</strong>
+            </div>
+
+            <a class="btn primary" href="checkout.html" style="width: 100%; margin-top: 1.4rem;">Continue to payment</a>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

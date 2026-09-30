@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Sky Inn Hotel | Checkout</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div>
+            <span>Sky Inn Hotel</span>
+            <small>Luxury stays</small>
+          </div>
+        </div>
+
+        <nav class="nav-links" aria-label="main navigation">
+          <a href="welcome.html">Welcome</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="booking.html" class="active">Book</a>
+          <a href="my-bookings.html">My Bookings</a>
+          <a href="index.html">Logout</a>
+        </nav>
+
+        <div class="nav-meta">
+          <span class="user-pill" data-user-badge>Sarah Johnson</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Secure checkout</h2>
+            <p>Choose how you would like to complete your reservation.</p>
+          </div>
+        </div>
+
+        <div class="booking-layout">
+          <div class="checkout-card">
+            <h3>Payment details</h3>
+
+            <div class="field-group" style="margin-bottom: 1rem;">
+              <label for="paymentMethod">Payment method</label>
+              <select id="paymentMethod">
+                <option>Credit / Debit Card</option>
+                <option>FPX</option>
+                <option>Touch 'n Go eWallet</option>
+              </select>
+            </div>
+
+            <div class="field-group" style="margin-bottom: 1rem;">
+              <label for="cardName">Cardholder name</label>
+              <input id="cardName" type="text" value="Sarah Johnson" />
+            </div>
+
+            <div class="field-group" style="margin-bottom: 1rem;">
+              <label for="cardNumber">Card number</label>
+              <input id="cardNumber" type="text" value="4242 4242 4242 4242" />
+            </div>
+
+            <div class="grid two">
+              <div class="field-group">
+                <label for="expiry">Expiry date</label>
+                <input id="expiry" type="text" value="12/28" />
+              </div>
+
+              <div class="field-group">
+                <label for="cvv">CVV</label>
+                <input id="cvv" type="text" value="148" />
+              </div>
+            </div>
+          </div>
+
+          <aside class="summary-card">
+            <h3>Reservation total</h3>
+            <ul class="summary-list">
+              <li><span>Room</span><strong id="selectedRoomName">Deluxe Room</strong></li>
+              <li><span>Check-in</span><strong>02 Oct 2026</strong></li>
+              <li><span>Check-out</span><strong>04 Oct 2026</strong></li>
+              <li><span>Deposit</span><strong>RM 60.00</strong></li>
+            </ul>
+
+            <div class="total-row">
+              <span>Total due</span>
+              <strong id="bookingTotal">RM 620.00</strong>
+            </div>
+
+            <button id="confirmPayment" class="btn primary" style="width: 100%; margin-top: 1.4rem;">Confirm booking</button>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
